@@ -1,0 +1,20 @@
+{
+    "name": "common_cart",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "icons":{
+      "16": "favicon.png",
+      "32": "favicon.png",
+      "48": "favicon.png",
+      "128": "favicon.png"
+    },
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    
+    "action": {
+        "default_popup": "Home.html"
+      },
+      "permissions":["activeTab"]
+}

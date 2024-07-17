@@ -1,0 +1,207 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  /* border-radius: 10px; */
+}
+.skeleton {
+  animation: skeleton-loading 500ms linear infinite alternate;
+}
+.p {
+  height: 10px;
+  margin: 2px;
+  border-radius: 5px;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: #374151;
+  }
+  100% {
+    background-color: #facd1754;
+  }
+}
+
+h3 {
+  padding: 3px;
+  color: #facc17;
+}
+h3 img {
+  /* height: 5px; */
+  width: 34px;
+}
+.container {
+  height: 500px;
+  width: 340px;
+  border-radius: 1px;
+  background-image: linear-gradient(to bottom right, #374151, #111827);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.cardCOntainer {
+  background-color: #010102;
+  width: 320px;
+  height: 400px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  border-radius: 10px;
+  overflow: scroll;
+  transition: ease-out 100ms;
+}
+.buttons {
+  background-color: transparent;
+  margin-bottom: 20px;
+  height: 50px;
+  width: 270px;
+  /* overflow: hidden; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn {
+  padding: 5px;
+  margin: 25px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+  border-radius: 50%;
+  cursor: pointer;
+}
+.btn img {
+  width: 80%;
+}
+
+.btn:hover {
+  padding-inline: 8px;
+  width: 60px;
+  height: 50px;
+  background-image: linear-gradient(to bottom right, #374151, #111827);
+  box-shadow: 5px 5px 5px;
+  transition: ease-out 100ms;
+}
+.btn:active {
+  padding-inline: 8px;
+  width: 40px;
+  height: 40px;
+  background-image: linear-gradient(to bottom right, #374151, #111827);
+  box-shadow: 3px 3px 3px;
+  transition: ease-out 100ms;
+}
+.card {
+  border-radius: 5px;
+  height: 60px;
+  width: 310px;
+  margin: 5px;
+  background-image: linear-gradient(to bottom right, #374151, #111827);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+::-webkit-scrollbar:horizontal {
+  display: none;
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #facc17;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  border: 0;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: red;
+}
+.card .img {
+  height: 60px;
+  width: 60px;
+}
+.cardimage {
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  margin: 2.5px;
+  border: 2px solid #666666;
+}
+.Pdetails {
+  width: 150px;
+  margin: 5px;
+  color: azure;
+  font-size: smaller;
+  overflow: hidden;
+}
+.icon {
+  margin: 5px;
+  height: 50px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.icon img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.title {
+  color: #3770ff;
+  font-size: small;
+  margin-bottom: 4px;
+}
+.Pdetails p {
+  height: 25px;
+  overflow: hidden;
+}
+.deleteOne {
+  border: none;
+  background-color: transparent;
+}
+
+.icon img:hover {
+  height: 25px;
+  width: 25px;
+  transition: ease-out 100ms;
+}
+.icon img:active {
+  height: 22px;
+  width: 22px;
+  transition: ease-out 100ms;
+}
+.add {
+  animation-name: example;
+  animation-duration: 500ms;
+  animation-delay: 0;
+}
+.green {
+  color: #0fc044;
+}
+.red {
+  color: red;
+}
+@keyframes example {
+  from {
+    width: 300px;
+    height: 0px;
+  }
+  to {
+    width: 310px;
+    height: 60px;
+  }
+}
+#loader {
+  padding-inline: 50px;
+  width: 94px;
+}
